@@ -1,0 +1,91 @@
+* {
+    user-select: none;
+}
+body {
+    font-family: Arial;
+    background-color: #282828;
+}
+.calculator-base {
+    width: 320px;
+    height: 520px;
+    background-color: black;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 2px solid #9c96967b;
+}
+.result {
+    height: 120px;
+}
+.history {
+    padding-top: 20px;
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    font-size: 15px;
+    color: #919191;
+}
+.output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    color: white;
+}
+.keypad {
+    height: 400px;
+}
+hr {
+    margin: 0 20px;
+    border: 0.1px solid #ceffffcc;
+}
+.operator, .number {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-width: 0;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    color: beige;
+}
+.empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-width: 0;
+    background-color: black;
+}
+.operator {
+    color: #ff6700;
+}
+.equal-to {
+    border-radius: 50%;
+    background-color: #ec5f00;
+    color: beige;
+}
+.operator, .number{
+    cursor: pointer;
+}
+.operator:active, .number:active {
+    font-size: 18px;
+}
+.theme {
+    display: flex;
+    justify-content: center;
+}
+.dark, .light {
+    padding: 12px;
+    margin: 20px 40px;
+    border-radius: 5px;
+}
+.dark:focus, .light:focus {
+    outline: 0;
+}
+.dark {
+    background-color: steelblue;
+}
+.light {
+    background-color: antiquewhite;
+}
